@@ -1,0 +1,162 @@
+.cake-details {
+  padding-top: 100px;
+  padding-bottom: 2rem;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.cake-image-large {
+  width: 100%;
+  height: 500px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.cake-image-large img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.no-image-large {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 8rem;
+}
+
+.cake-details-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cake-details-info h1 {
+  color: #333;
+  font-size: 2.5rem;
+}
+
+.rating-large {
+  font-size: 1.2rem;
+}
+
+.price-large {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ff1493;
+}
+
+.details-section {
+  margin: 1rem 0;
+}
+
+.details-section h3 {
+  color: #ff1493;
+  margin-bottom: 0.5rem;
+}
+
+.details-section label {
+  display: block;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.btn-large {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.btn-large:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.reviews-section {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 2px solid #eee;
+}
+
+.reviews-section h2 {
+  color: #ff1493;
+  margin-bottom: 2rem;
+}
+
+.review-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-form h3 {
+  margin-bottom: 1rem;
+}
+
+.review-form select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.review-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.review-rating {
+  color: #ffa500;
+}
+
+.review-date {
+  color: #999;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.review-comment {
+  color: #666;
+  line-height: 1.6;
+}
+
+.loading {
+  text-align: center;
+  padding: 4rem;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cake-image-large {
+    height: 300px;
+  }
+}
